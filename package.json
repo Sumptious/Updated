@@ -1,0 +1,31 @@
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "description": "Run my app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sumptious/My-repo.git"
+  },
+  "author": "Ruth Nyong",
+  "license": "ISC",
+  "engines": {
+    "node": "8.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Sumptious/My-repo/issues"
+  },
+  "homepage": "https://github.com/Sumptious/My-repo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-validator": "^5.2.0",
+    "nodemailer": "^4.6.5"
+  }
+}
