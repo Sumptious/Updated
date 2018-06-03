@@ -6,15 +6,16 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <meta name="description" content="Ruth Nyong is a dynamic web developer who creates timeless sites with javascript, node js, express js, wordpress, html5, css3, bootstrap 4">
                 <meta name="keywords" content="creative, modern, material ui design, clean, bootstrap responsive, uikits responsive, html5, css3, portfolio, one page, corporate, start-up, designer, freelancer, personal, grid">
-                <link rel="shortcut icon" href="images/SUMPTIOUS.png">
                 <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
                 <link rel="stylesheet" type="text/css" href="css/uikit-rtl.min.css">
                 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
                 <link rel="stylesheet" type="text/css" href="css/w3.css">
+                <link rel="shortcut icon" type="image/png" href="favicon.ico">
                 <link rel="stylesheet" type="text/css" href="css/fontawesome-4.6.3.min.css">
                 <link rel="stylesheet" type="text/css" href="css/main.css">
         </head>
     <body class="uk-background-blend-multiply" style=" background-image: url(images/bg.png); background-position: center; background-size: cover;">
+        <div id="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom:#transparent-sticky-navbar" class="w3-card-4 show">
                 <div><a class="uk-navbar-toggle myNav" uk-navbar-toggle-icon href="#nav"></a></div>
                 <nav class=" uk-navbar " uk-navbar style="position: relative; z-index:1;" id="">
@@ -149,13 +150,13 @@
                             <h2 class="about">SERVICES</h2>
                         </div>
                     </div>
-                </div>
+                </div><br><br>
                            
                 <div class="container ">
                     <div class="row">
                         <div class="col-md-4">
                             <figure class="w3-card-4 color" uk-scrollspy="cls: uk-animation-slide-bottom; repeat:true">
-                                    <div class="uk-background-cover" style="background-image: url(images/code.jpg); height:200px;  width: 100%;"></div>  
+                                    <div class="uk-background-cover" style="background-image: url(images/code.jpg); height:200px; width: 100%;"></div>  
                                 <figcaption>
                                     <div><header><h5 class="myHeader">Web Development</h5></header>
                                     <p class="text" align="center">I proffer web and IT solutions by creating timeless websites that makes your brand standout. 
@@ -213,12 +214,12 @@
                         <div class="row" uk-scrollspy="cls: uk-animation-scale-down; target: > div; repeat:true">
                             <div class="col-md-6">
                                 <div class="" align="center">
-                                    <form action="/contact" id="contact-form" method="post" role="form">
+                                    <form action="send" id="contact-form" method="post" role="form">
                                         <fieldset>
                                             <label for="name">Name &#42;</label>
                                             <input id="name" name="name" type="text" placeholder="Your name" required="required">
                                             <label for="email">Email &#42;</label>
-                                            <input id="email" name="email" type="text" placeholder="Your email" required="required">
+                                            <input id="mail" name="email" type="email" placeholder="Your email" required="required">
                                             <label for="message">Message &#42;</label>
                                             <textarea id="message" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
                                             <button type="submit" id="btn">Submit</button>
@@ -266,7 +267,7 @@
                 </div>
                 <footer>
                     <div class="last">
-                        <p>&copy; 2018.Developed and Designed by <a href="index.html" target="_blank">Sumptious</a></p>
+                        <p>&copy; 2018.Developed and Designed by <a href="https://sumptious.herokuapp.com" target="_blank">Sumptious</a></p>
                     </div>
                 </footer>
               
@@ -278,3 +279,7 @@
        
     </body>
 </html>
+
+
+  
+ 

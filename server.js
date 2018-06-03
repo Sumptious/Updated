@@ -13,7 +13,7 @@ var middlewares = [
 var PORT = process.env.PORT || 3000;
 
 app.use(express.static (path.join(__dirname + '/public')));
-// app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
 
 
 // //POST route from contact form
-app.post('/contact', urlencodedParser, function (req, res) {
+app.post('/send', urlencodedParser, function (req, res) {
   console.log(req.body);
     let mailOpts, smtpTrans;
     smtpTrans = nodemailer.createTransport({
@@ -36,19 +36,18 @@ app.post('/contact', urlencodedParser, function (req, res) {
     });
 
     mailOpts = {
-        from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-        to: 'ruthny16@gmail.com',
-        subject: 'New message from contact form at Ruth.com',
+        from: 'sumptious.herokuapp.com',
+        to: process.env.MY_NAME,
+        subject: 'New message from Contact',
         text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
       };
       smtpTrans.sendMail(mailOpts, function (error, response) {
         if (error) {
-          res.render('Email could not be sent due to' +' '+ error);
-          // console.log('Try sending your message again');
-        }
-        else {
-          res.render('Email was sent successfully');  
-          // console.log('Try sending your message again');
+          res.render('contact-failure');
+          console.log(error) 
+        } else {
+          res.render('contact-success');
+          console.log('Email was sent successfully');
         }
       });
     });
@@ -56,5 +55,3 @@ app.post('/contact', urlencodedParser, function (req, res) {
     app.listen(PORT, function() {
       console.log('app listening on port' + ' ' + PORT)
     });
-
-    // app.listen(port);
