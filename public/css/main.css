@@ -10,11 +10,12 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 99999;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: none repeat scroll 0 0 #ffffff;
+   margin: -75px 0 0 -75px;
+    background: none repeat cover scroll 0 0 #ffffff;
   }
   .lds-spinner div {
     transform-origin: 32px 32px;
