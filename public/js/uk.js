@@ -9,12 +9,6 @@ email.addEventListener("input", function (event) {
 });
 
 $(document).ready(function ($) {
-    window.onload = function () {
-        $(' #lds-spinner').fadeOut(500, function () {
-            $(' #lds-spinner').remove();
-        });
-    }
-
     $('.myNav').click(function () {
         $('.r1-here').toggle();
     });
@@ -31,3 +25,9 @@ $(document).ready(function ($) {
         $('.text2').toggle();
     });
 });
+
+window.onload = function () {
+    $(' .lds-spinner').fadeOut(100, function () {
+        $(' .lds-spinner').remove();
+    });
+}

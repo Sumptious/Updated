@@ -1,10 +1,10 @@
 body{
     background-color: #e3f2f3
 }
-.no-js #Ids-spinner{
+.no-js .Ids-spinner{
     display: none;
 }
-.js #lds-spinner {
+.js .lds-spinner {
     position: fixed;
     top: 0;
     left: 0;
@@ -273,6 +273,7 @@ h2{
 }
 input[type=text],
 input[type=email],
+input[type=number],
 textarea {
     width: 100%;
     padding: 12px;
@@ -282,6 +283,12 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+}
+.alert{
+    width: 50%;
+    border-radius: 5px;
+    height: auto;
+    padding: 12px;	
 }
 #btn{
     background-color: #fff;
@@ -377,6 +384,9 @@ figure > img{
         
         font-size: 25px !important;
         font-weight: 300 !important;
+    }
+    alert{
+        width: 100% !important;
     }
     .name{
         width: 100% !important;
