@@ -8,10 +8,18 @@ email.addEventListener("input", function (event) {
   }
 });
 
+// var change = document.getElementsByClassName("myHeader").onmouseover= function () {
+// 			document.getElementsByClassName("myHeader").innerHTML= "Click to Read More";
+// 	// 		// body...
+// 		};
+
 $(document).ready(function ($) {
     $('.myNav').click(function () {
         $('.r1-here').toggle();
     });
+    // $('.myHeader').mouseOver(function () {
+        
+    // });
     $('.text, .text1, .text2').hide();
     $('.myHeader').click(function () {
         $('.text').toggle();

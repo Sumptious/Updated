@@ -1,6 +1,9 @@
 body{
     background-color: #e3f2f3
 }
+css-selector {
+    font-family: 'Montserrat';
+}
 .no-js .Ids-spinner{
     display: none;
 }
@@ -409,9 +412,9 @@ label{
 .uk-card{
     background-color: #fff;
 }
-p{
+/* p{
     font-family: Tahoma,
-}
+} */
 .middle{
     text-align:center;   
 }
