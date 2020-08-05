@@ -45,8 +45,8 @@ app.post('/send', urlencodedParser, function (req, res) {
         port: 465,
         secure: true,
         auth: {
-            user: process.env.MY_NAME,
-            pass: process.env.Settings
+            user: process.env.MY_NAME
+           
         }
     });
 
